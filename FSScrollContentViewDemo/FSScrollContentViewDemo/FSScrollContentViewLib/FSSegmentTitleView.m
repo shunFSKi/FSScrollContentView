@@ -34,7 +34,7 @@
     }
     return self;
 }
-
+//初始化默认属性值
 - (void)initWithProperty
 {
     self.itemMargin = 20;
@@ -45,7 +45,7 @@
     self.indicatorColor = self.titleSelectColor;
     self.indicatorExtension = 5.f;
 }
-
+//重新布局frame
 - (void)layoutSubviews
 {
     [super layoutSubviews];
@@ -58,14 +58,14 @@
         CGFloat itemBtnWidth = [FSSegmentTitleView getWidthWithString:title font:_titleFont] + self.itemMargin;
         totalBtnWidth += itemBtnWidth;
     }
-    if (totalBtnWidth <= CGRectGetWidth(self.bounds)) {
+    if (totalBtnWidth <= CGRectGetWidth(self.bounds)) {//不能滑动
         CGFloat itemBtnWidth = CGRectGetWidth(self.bounds)/self.itemBtnArr.count;
         CGFloat itemBtnHeight = CGRectGetHeight(self.bounds);
         [self.itemBtnArr enumerateObjectsUsingBlock:^(UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             obj.frame = CGRectMake(idx * itemBtnWidth, 0, itemBtnWidth, itemBtnHeight);
         }];
         self.scrollView.contentSize = CGSizeMake(CGRectGetWidth(self.bounds), CGRectGetHeight(self.scrollView.bounds));
-    }else{
+    }else{//超出屏幕 可以滑动
         CGFloat currentX = 0;
         for (int idx = 0; idx < self.titlesArr.count; idx++) {
             UIButton *btn = self.itemBtnArr[idx];
@@ -76,7 +76,7 @@
         }
         self.scrollView.contentSize = CGSizeMake(currentX, CGRectGetHeight(self.scrollView.bounds));
     }
-    [self moveIndicatorView:YES];
+    [self moveIndicatorView:NO];
 }
 
 - (void)moveIndicatorView:(BOOL)animated
@@ -95,6 +95,9 @@
             case FSIndicatorTypeCustom:
                 self.indicatorView.center = CGPointMake(selectBtn.center.x, CGRectGetHeight(self.scrollView.bounds) - 1);
                 self.indicatorView.bounds = CGRectMake(0, 0, indicatorWidth + _indicatorExtension*2, 2);
+                break;
+            case FSIndicatorTypeNone:
+                self.indicatorView.frame = CGRectZero;
                 break;
             default:
                 break;
@@ -242,11 +245,23 @@
 }
 
 #pragma mark Private
+/**
+ 计算字符串长度
+
+ @param string string
+ @param font font
+ @return 字符串长度
+ */
 + (CGFloat)getWidthWithString:(NSString *)string font:(UIFont *)font {
     NSDictionary *attrs = @{NSFontAttributeName : font};
     return [string boundingRectWithSize:CGSizeMake(0, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size.width;
 }
 
+/**
+ 随机色
+
+ @return 调试用
+ */
 + (UIColor*) randomColor{
     NSInteger r = arc4random() % 255;
     NSInteger g = arc4random() % 255;

@@ -15,6 +15,7 @@
 		A36A9A8F1EB988A000A2F2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36A9A8D1EB988A000A2F2C5 /* LaunchScreen.storyboard */; };
 		A36A9A991EB988C600A2F2C5 /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A36A9A981EB988C600A2F2C5 /* FSPageContentView.m */; };
 		A36A9A9C1EB988F800A2F2C5 /* FSSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A36A9A9B1EB988F800A2F2C5 /* FSSegmentTitleView.m */; };
+		A3A324621EBACDB30065A8CB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A324611EBACDB30065A8CB /* TestViewController.m */; };
 		F083365D1EBA31E800667BAF /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083365C1EBA31E800667BAF /* ChildViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		A36A9A981EB988C600A2F2C5 /* FSPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPageContentView.m; sourceTree = "<group>"; };
 		A36A9A9A1EB988F800A2F2C5 /* FSSegmentTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSegmentTitleView.h; sourceTree = "<group>"; };
 		A36A9A9B1EB988F800A2F2C5 /* FSSegmentTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSegmentTitleView.m; sourceTree = "<group>"; };
+		A3A324601EBACDB30065A8CB /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		A3A324611EBACDB30065A8CB /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		F083365B1EBA31E800667BAF /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		F083365C1EBA31E800667BAF /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
 		F083365E1EBA35E200667BAF /* FSScrollContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSScrollContentView.h; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				A36A9A831EB9889E00A2F2C5 /* AppDelegate.m */,
 				A36A9A851EB9889E00A2F2C5 /* ViewController.h */,
 				A36A9A861EB9889F00A2F2C5 /* ViewController.m */,
+				A3A324601EBACDB30065A8CB /* TestViewController.h */,
+				A3A324611EBACDB30065A8CB /* TestViewController.m */,
 				F083365B1EBA31E800667BAF /* ChildViewController.h */,
 				F083365C1EBA31E800667BAF /* ChildViewController.m */,
 				A36A9A881EB9889F00A2F2C5 /* Main.storyboard */,
@@ -178,6 +183,7 @@
 			files = (
 				A36A9A871EB9889F00A2F2C5 /* ViewController.m in Sources */,
 				A36A9A841EB9889E00A2F2C5 /* AppDelegate.m in Sources */,
+				A3A324621EBACDB30065A8CB /* TestViewController.m in Sources */,
 				A36A9A991EB988C600A2F2C5 /* FSPageContentView.m in Sources */,
 				A36A9A811EB9889E00A2F2C5 /* main.m in Sources */,
 				A36A9A9C1EB988F800A2F2C5 /* FSSegmentTitleView.m in Sources */,

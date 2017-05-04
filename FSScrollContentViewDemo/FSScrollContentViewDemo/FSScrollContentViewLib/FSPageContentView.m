@@ -12,11 +12,11 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
 
 @interface FSPageContentView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
-@property (nonatomic, weak) UIViewController *parentVC;
-@property (nonatomic, strong) NSArray *childsVCs;
+@property (nonatomic, weak) UIViewController *parentVC;//父视图
+@property (nonatomic, strong) NSArray *childsVCs;//子视图数组
 @property (nonatomic, weak) UICollectionView *collectionView;
 @property (nonatomic, assign) CGFloat startOffsetX;
-@property (nonatomic, assign) BOOL isSelectBtn;
+@property (nonatomic, assign) BOOL isSelectBtn;//是否是滑动
 
 @end
 
@@ -115,16 +115,16 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
     NSInteger startIndex = floor(_startOffsetX/scrollView_W);
     NSInteger endIndex;
     CGFloat progress;
-    if (currentOffsetX > _startOffsetX) {
+    if (currentOffsetX > _startOffsetX) {//左滑left
         progress = (currentOffsetX - _startOffsetX)/scrollView_W;
         endIndex = startIndex + 1;
         if (endIndex > self.childsVCs.count - 1) {
             endIndex = self.childsVCs.count - 1;
         }
-    }else if (currentOffsetX == _startOffsetX){
+    }else if (currentOffsetX == _startOffsetX){//没滑过去
         progress = 0;
         endIndex = startIndex;
-    }else{
+    }else{//右滑right
         progress = (_startOffsetX - currentOffsetX)/scrollView_W;
         endIndex = startIndex - 1;
         endIndex = endIndex < 0?0:endIndex;
