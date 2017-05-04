@@ -169,3 +169,5 @@ self.titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(0, 64, CGRe
 * 2017.4.28 ——> **1.0**初始版本
 ## 后续
 因为最近在重新整理整个项目，准备剔除之前项目的混乱代码，复杂的业务逻辑，将会不定期封装一些比较实用的小框架，目前上传的FSxxdemo都是我在重构项目过程中写的一些封装库，算是较为实用并且稳定的框架类，主要目的也是为了整理记录下来方便以后使用，这个滑动框架暂时样式较少，但是已经能够满足日常开发所用，后期我会抽时间增加更多的支持类型，比如放大选中的标题文字，增加图片类型等。每次更新都将在这里做备忘记录。———— 2017.5.4
+
+![](https://github.com/shunFSKi/ImageResources/blob/master/qrcode_for_gh_e49d866d2f7a_258.jpg)
