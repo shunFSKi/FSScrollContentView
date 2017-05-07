@@ -36,11 +36,6 @@ typedef enum : NSUInteger {
 @property (nonatomic, weak) id<FSSegmentTitleViewDelegate>delegate;
 
 /**
- 标题数组，必须传值
- */
-@property (nonatomic, strong) NSArray *titlesArr;
-
-/**
  标题文字间距，默认20
  */
 @property (nonatomic, assign) CGFloat itemMargin;
@@ -54,6 +49,11 @@ typedef enum : NSUInteger {
  标题字体大小，默认15
  */
 @property (nonatomic, strong) UIFont *titleFont;
+
+/**
+ 标题选中字体大小，默认不设置就是titleFont
+ */
+@property (nonatomic, strong) UIFont *titleSelectFont;
 
 /**
  标题正常颜色，默认black
@@ -79,10 +79,11 @@ typedef enum : NSUInteger {
  对象方法创建FSSegmentTitleView
 
  @param frame frame
+ @param titlesArr 标题数组
  @param delegate delegate
  @param incatorType 指示器类型
  @return FSSegmentTitleView
  */
-- (instancetype)initWithFrame:(CGRect)frame delegate:(id<FSSegmentTitleViewDelegate>)delegate indicatorType:(FSIndicatorType)incatorType;
+- (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titlesArr delegate:(id<FSSegmentTitleViewDelegate>)delegate indicatorType:(FSIndicatorType)incatorType;
 
 @end
