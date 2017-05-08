@@ -81,7 +81,7 @@
 ```
 * FSSegmentTitleView属性修改
 
-~~@property (nonatomic, strong) NSArray *titlesArr;~~**废弃/DEPRECATED**——>2017.5.7
+~~@property (nonatomic, strong) NSArray *titlesArr;~~**废弃/DEPRECATED_1.0.1**
 ```
 ~~/**
  标题数组，必须传值
