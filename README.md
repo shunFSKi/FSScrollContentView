@@ -81,12 +81,11 @@
 ```
 * FSSegmentTitleView属性修改
 
-~~@property (nonatomic, strong) NSArray *titlesArr;~~**废弃/DEPRECATED_1.0.1**
-```
 ~~/**
  标题数组，必须传值
  */
-@property (nonatomic, strong) NSArray *titlesArr;~~
+@property (nonatomic, strong) NSArray *titlesArr;~~**废弃/DEPRECATED_1.0.1**
+```
 
 /**
  标题文字间距，默认20
