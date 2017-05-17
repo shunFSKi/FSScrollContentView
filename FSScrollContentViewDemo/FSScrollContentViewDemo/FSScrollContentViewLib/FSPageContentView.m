@@ -14,7 +14,7 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
 
 @property (nonatomic, weak) UIViewController *parentVC;//父视图
 @property (nonatomic, strong) NSArray *childsVCs;//子视图数组
-@property (nonatomic, weak) UICollectionView *collectionView;
+@property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) CGFloat startOffsetX;
 @property (nonatomic, assign) BOOL isSelectBtn;//是否是滑动
 
@@ -51,14 +51,13 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
         flowLayout.minimumInteritemSpacing = 0;
         flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
         
-        UICollectionView *collectionView = [[UICollectionView alloc]initWithFrame:self.bounds collectionViewLayout:flowLayout];
-        collectionView.showsHorizontalScrollIndicator = NO;
-        collectionView.pagingEnabled = YES;
-        collectionView.bounces = NO;
-        collectionView.delegate = self;
-        collectionView.dataSource = self;
-        [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:collectionCellIdentifier];
-        _collectionView = collectionView;
+        _collectionView = [[UICollectionView alloc]initWithFrame:self.bounds collectionViewLayout:flowLayout];
+        _collectionView.showsHorizontalScrollIndicator = NO;
+        _collectionView.pagingEnabled = YES;
+        _collectionView.bounces = NO;
+        _collectionView.delegate = self;
+        _collectionView.dataSource = self;
+        [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:collectionCellIdentifier];
     }
     return _collectionView;
 }
@@ -68,6 +67,7 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
 {
     _startOffsetX = 0;
     _isSelectBtn = NO;
+    _contentViewCanScroll = YES;
     
     for (UIViewController *childVC in self.childsVCs) {
         [self.parentVC addChildViewController:childVC];
@@ -157,6 +157,12 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
     _isSelectBtn = YES;
     _contentViewCurrentIndex = contentViewCurrentIndex;
     [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:contentViewCurrentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:NO];
+}
+
+- (void)setContentViewCanScroll:(BOOL)contentViewCanScroll
+{
+    _contentViewCanScroll = contentViewCanScroll;
+    _collectionView.scrollEnabled = _contentViewCanScroll;
 }
 
 @end

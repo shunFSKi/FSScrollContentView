@@ -36,6 +36,7 @@
     }
     self.pageContentView = [[FSPageContentView alloc]initWithFrame:CGRectMake(0, 114, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - 90) childVCs:childVCs parentVC:self delegate:self];
     self.pageContentView.contentViewCurrentIndex = 2;
+//    self.pageContentView.contentViewCanScroll = NO;//设置滑动属性
     [self.view addSubview:_pageContentView];
 }
 
