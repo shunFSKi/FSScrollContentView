@@ -177,4 +177,6 @@ self.titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(0, 64, CGRe
 
 修改初始化方法，添加了标题选中自定义文字大小类型 ———— 2017.5.7
 
+修复iOS7下contentView无法加载的Bug，添加contentViewCanScroll属性可手动控制contentView能否滑动 ———— 2017.5.17
+
 ![](https://github.com/shunFSKi/ImageResources/blob/master/qrcode_for_gh_e49d866d2f7a_258.jpg)
