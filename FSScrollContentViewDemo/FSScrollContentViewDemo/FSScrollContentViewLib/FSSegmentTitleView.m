@@ -60,15 +60,20 @@
     CGFloat totalBtnWidth = 0.0;
     UIFont *titleFont = _titleFont;
     
-    for (NSString *title in self.titlesArr) {
-        CGFloat itemBtnWidth = [FSSegmentTitleView getWidthWithString:title font:titleFont] + self.itemMargin;
-        totalBtnWidth += itemBtnWidth;
+    if (_titleFont != _titleSelectFont) {
+        for (int idx = 0; idx < self.titlesArr.count; idx++) {
+            UIButton *btn = self.itemBtnArr[idx];
+            titleFont = btn.isSelected?_titleSelectFont:_titleFont;
+            CGFloat itemBtnWidth = [FSSegmentTitleView getWidthWithString:self.titlesArr[idx] font:titleFont] + self.itemMargin;
+            totalBtnWidth += itemBtnWidth;
+        }
     }
-    for (int idx = 0; idx < self.titlesArr.count; idx++) {
-        UIButton *btn = self.itemBtnArr[idx];
-        titleFont = btn.isSelected?_titleSelectFont:_titleFont;
-        CGFloat itemBtnWidth = [FSSegmentTitleView getWidthWithString:self.titlesArr[idx] font:titleFont] + self.itemMargin;
-        totalBtnWidth += itemBtnWidth;
+    else
+    {
+        for (NSString *title in self.titlesArr) {
+            CGFloat itemBtnWidth = [FSSegmentTitleView getWidthWithString:title font:titleFont] + self.itemMargin;
+            totalBtnWidth += itemBtnWidth;
+        }
     }
     if (totalBtnWidth <= CGRectGetWidth(self.bounds)) {//不能滑动
         CGFloat itemBtnWidth = CGRectGetWidth(self.bounds)/self.itemBtnArr.count;
