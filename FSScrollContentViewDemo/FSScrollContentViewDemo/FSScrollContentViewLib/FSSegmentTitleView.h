@@ -51,7 +51,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, strong) UIFont *titleFont;
 
 /**
- 标题选中字体大小，默认不设置就是titleFont
+ 标题选中字体大小，默认15
  */
 @property (nonatomic, strong) UIFont *titleSelectFont;
 
