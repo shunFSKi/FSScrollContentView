@@ -12,7 +12,7 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
 
 @interface FSPageContentView ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
-@property (nonatomic, weak) UIViewController *parentVC;//父视图
+@property (nonatomic, strong) UIViewController *parentVC;//父视图
 @property (nonatomic, strong) NSArray *childsVCs;//子视图数组
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, assign) CGFloat startOffsetX;
