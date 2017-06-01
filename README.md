@@ -1,4 +1,7 @@
 # FSScrollContentView
+
+![badge-languages](https://img.shields.io/badge/language-ObjC-orange.svg) ![badge-platforms](https://img.shields.io/badge/platforms-iOS7-lightgrey.svg) [![Build Status](https://travis-ci.org/shunFSKi/FSScrollContentView.svg?branch=master)](https://travis-ci.org/shunFSKi/FSScrollContentView) [![CocoaPods](https://img.shields.io/cocoapods/v/FSScrollContentView.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/dt/FSScrollContentView.svg)]() [![CocoaPods](https://img.shields.io/cocoapods/l/FSScrollContentView.svg)]()
+
 简书：http://www.jianshu.com/p/34cecb066cc1
 
 这是本人在整理项目时抽离了业务代码整理封装的一个通俗易懂较为实用的框架。
@@ -10,6 +13,14 @@
 ## 效果图
 ![几种类型的效果图](https://github.com/shunFSKi/ImageResources/blob/master/scrollContentView.gif)
 ## 使用方式
+**1、cocoapods**
+
+pod search FSScrollContentView 
+如果找不到执行pod setup
+pod 'FSScrollContentView'
+
+**2、添加文件**
+
 直接clone代码后将项目中的FSScrollContentViewLib文件夹导入自己项目中，导入FSScrollContentView.h头文件
 ## API使用说明
 其实demo中有很详细的注释说明，通俗易懂
@@ -178,5 +189,7 @@ self.titleView = [[FSSegmentTitleView alloc]initWithFrame:CGRectMake(0, 64, CGRe
 修改初始化方法，添加了标题选中自定义文字大小类型 ———— 2017.5.7
 
 修复iOS7下contentView无法加载的Bug，添加contentViewCanScroll属性可手动控制contentView能否滑动 ———— 2017.5.17
+
+修复若干bug，添加cocoapods支持 ———— 2017.6.1
 
 ![](https://github.com/shunFSKi/ImageResources/blob/master/qrcode_for_gh_e49d866d2f7a_258.jpg)
