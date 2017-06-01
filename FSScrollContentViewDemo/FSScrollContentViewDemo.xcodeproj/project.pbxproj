@@ -13,8 +13,8 @@
 		A36A9A8A1EB9889F00A2F2C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36A9A881EB9889F00A2F2C5 /* Main.storyboard */; };
 		A36A9A8C1EB9889F00A2F2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A36A9A8B1EB9889F00A2F2C5 /* Assets.xcassets */; };
 		A36A9A8F1EB988A000A2F2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A36A9A8D1EB988A000A2F2C5 /* LaunchScreen.storyboard */; };
-		A36A9A991EB988C600A2F2C5 /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A36A9A981EB988C600A2F2C5 /* FSPageContentView.m */; };
-		A36A9A9C1EB988F800A2F2C5 /* FSSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A36A9A9B1EB988F800A2F2C5 /* FSSegmentTitleView.m */; };
+		A39D66591EDFEDC200D3F407 /* FSPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A39D66551EDFEDC200D3F407 /* FSPageContentView.m */; };
+		A39D665A1EDFEDC200D3F407 /* FSSegmentTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A39D66581EDFEDC200D3F407 /* FSSegmentTitleView.m */; };
 		A3A324621EBACDB30065A8CB /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A324611EBACDB30065A8CB /* TestViewController.m */; };
 		F083365D1EBA31E800667BAF /* ChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F083365C1EBA31E800667BAF /* ChildViewController.m */; };
 /* End PBXBuildFile section */
@@ -30,15 +30,20 @@
 		A36A9A8B1EB9889F00A2F2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A36A9A8E1EB988A000A2F2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A36A9A901EB988A000A2F2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A36A9A971EB988C600A2F2C5 /* FSPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPageContentView.h; sourceTree = "<group>"; };
-		A36A9A981EB988C600A2F2C5 /* FSPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPageContentView.m; sourceTree = "<group>"; };
-		A36A9A9A1EB988F800A2F2C5 /* FSSegmentTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSegmentTitleView.h; sourceTree = "<group>"; };
-		A36A9A9B1EB988F800A2F2C5 /* FSSegmentTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSegmentTitleView.m; sourceTree = "<group>"; };
+		A39D664E1EDFED4000D3F407 /* FSPageContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSPageContentView.h; sourceTree = "<group>"; };
+		A39D664F1EDFED4000D3F407 /* FSPageContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSPageContentView.m; sourceTree = "<group>"; };
+		A39D66501EDFED4000D3F407 /* FSScrollContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSScrollContentView.h; sourceTree = "<group>"; };
+		A39D66511EDFED4000D3F407 /* FSSegmentTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSSegmentTitleView.h; sourceTree = "<group>"; };
+		A39D66521EDFED4100D3F407 /* FSSegmentTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSSegmentTitleView.m; sourceTree = "<group>"; };
+		A39D66541EDFEDC200D3F407 /* FSPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSPageContentView.h; sourceTree = "<group>"; };
+		A39D66551EDFEDC200D3F407 /* FSPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSPageContentView.m; sourceTree = "<group>"; };
+		A39D66561EDFEDC200D3F407 /* FSScrollContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSScrollContentView.h; sourceTree = "<group>"; };
+		A39D66571EDFEDC200D3F407 /* FSSegmentTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSegmentTitleView.h; sourceTree = "<group>"; };
+		A39D66581EDFEDC200D3F407 /* FSSegmentTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSegmentTitleView.m; sourceTree = "<group>"; };
 		A3A324601EBACDB30065A8CB /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		A3A324611EBACDB30065A8CB /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		F083365B1EBA31E800667BAF /* ChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildViewController.h; sourceTree = "<group>"; };
 		F083365C1EBA31E800667BAF /* ChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildViewController.m; sourceTree = "<group>"; };
-		F083365E1EBA35E200667BAF /* FSScrollContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSScrollContentView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +60,10 @@
 		A36A9A731EB9889E00A2F2C5 = {
 			isa = PBXGroup;
 			children = (
+				A39D66531EDFEDC200D3F407 /* FSScrollContentViewLib */,
 				A36A9A7E1EB9889E00A2F2C5 /* FSScrollContentViewDemo */,
 				A36A9A7D1EB9889E00A2F2C5 /* Products */,
+				A39D664C1EDFED4000D3F407 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +78,6 @@
 		A36A9A7E1EB9889E00A2F2C5 /* FSScrollContentViewDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A36A9A961EB988C600A2F2C5 /* FSScrollContentViewLib */,
 				A36A9A821EB9889E00A2F2C5 /* AppDelegate.h */,
 				A36A9A831EB9889E00A2F2C5 /* AppDelegate.m */,
 				A36A9A851EB9889E00A2F2C5 /* ViewController.h */,
@@ -97,14 +103,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A36A9A961EB988C600A2F2C5 /* FSScrollContentViewLib */ = {
+		A39D664C1EDFED4000D3F407 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F083365E1EBA35E200667BAF /* FSScrollContentView.h */,
-				A36A9A971EB988C600A2F2C5 /* FSPageContentView.h */,
-				A36A9A981EB988C600A2F2C5 /* FSPageContentView.m */,
-				A36A9A9A1EB988F800A2F2C5 /* FSSegmentTitleView.h */,
-				A36A9A9B1EB988F800A2F2C5 /* FSSegmentTitleView.m */,
+				A39D664D1EDFED4000D3F407 /* FSScrollContentViewLib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A39D664D1EDFED4000D3F407 /* FSScrollContentViewLib */ = {
+			isa = PBXGroup;
+			children = (
+				A39D664E1EDFED4000D3F407 /* FSPageContentView.h */,
+				A39D664F1EDFED4000D3F407 /* FSPageContentView.m */,
+				A39D66501EDFED4000D3F407 /* FSScrollContentView.h */,
+				A39D66511EDFED4000D3F407 /* FSSegmentTitleView.h */,
+				A39D66521EDFED4100D3F407 /* FSSegmentTitleView.m */,
+			);
+			name = FSScrollContentViewLib;
+			path = ../FSScrollContentViewLib;
+			sourceTree = "<group>";
+		};
+		A39D66531EDFEDC200D3F407 /* FSScrollContentViewLib */ = {
+			isa = PBXGroup;
+			children = (
+				A39D66541EDFEDC200D3F407 /* FSPageContentView.h */,
+				A39D66551EDFEDC200D3F407 /* FSPageContentView.m */,
+				A39D66561EDFEDC200D3F407 /* FSScrollContentView.h */,
+				A39D66571EDFEDC200D3F407 /* FSSegmentTitleView.h */,
+				A39D66581EDFEDC200D3F407 /* FSSegmentTitleView.m */,
 			);
 			path = FSScrollContentViewLib;
 			sourceTree = "<group>";
@@ -183,10 +210,10 @@
 			files = (
 				A36A9A871EB9889F00A2F2C5 /* ViewController.m in Sources */,
 				A36A9A841EB9889E00A2F2C5 /* AppDelegate.m in Sources */,
+				A39D66591EDFEDC200D3F407 /* FSPageContentView.m in Sources */,
+				A39D665A1EDFEDC200D3F407 /* FSSegmentTitleView.m in Sources */,
 				A3A324621EBACDB30065A8CB /* TestViewController.m in Sources */,
-				A36A9A991EB988C600A2F2C5 /* FSPageContentView.m in Sources */,
 				A36A9A811EB9889E00A2F2C5 /* main.m in Sources */,
-				A36A9A9C1EB988F800A2F2C5 /* FSSegmentTitleView.m in Sources */,
 				F083365D1EBA31E800667BAF /* ChildViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
