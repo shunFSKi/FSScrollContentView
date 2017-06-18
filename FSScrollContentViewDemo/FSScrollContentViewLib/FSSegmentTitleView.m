@@ -282,6 +282,21 @@
     self.selectIndex = index;
 }
 
+#pragma mark UIScrollView
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(FSSegmentTitleViewWillBeginDragging:)]) {
+        [self.delegate FSSegmentTitleViewWillBeginDragging:self];
+    }
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(FSSegmentTitleViewWillEndDragging:)]) {
+        [self.delegate FSSegmentTitleViewWillEndDragging:self];
+    }
+}
+
 #pragma mark Private
 /**
  计算字符串长度
