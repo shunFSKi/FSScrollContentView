@@ -8,7 +8,7 @@
 
 #import "FSSegmentTitleView.h"
 
-@interface FSSegmentTitleView ()<UIScrollView>
+@interface FSSegmentTitleView ()<UIScrollViewDelegate>
 
 
 
