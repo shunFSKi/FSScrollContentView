@@ -8,7 +8,7 @@
 
 #import "FSSegmentTitleView.h"
 
-@interface FSSegmentTitleView ()
+@interface FSSegmentTitleView ()<UIScrollViewDelegate>
 
 
 
@@ -142,6 +142,7 @@
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.scrollsToTop = NO;
+        _scrollView.delegate = self;
         [self addSubview:_scrollView];
     }
     return _scrollView;

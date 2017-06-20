@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FSScrollContentView"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "titleView pageView linkage."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/shunFSKi/FSScrollContentView.git", :tag => "1.0.3" }
+  s.source       = { :git => "https://github.com/shunFSKi/FSScrollContentView.git", :tag => "1.0.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
