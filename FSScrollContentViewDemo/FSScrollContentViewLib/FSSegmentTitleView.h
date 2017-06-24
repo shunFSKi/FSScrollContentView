@@ -29,20 +29,6 @@ typedef enum : NSUInteger {
  */
 - (void)FSSegmentTitleView:(FSSegmentTitleView *)titleView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex;
 
-/**
- 将要开始滑动
-
- @param titleView FSSegmentTitleView
- */
-- (void)FSSegmentTitleViewWillBeginDragging:(FSSegmentTitleView *)titleView;
-
-/**
- 将要停止滑动
-
- @param titleView FSSegmentTitleView
- */
-- (void)FSSegmentTitleViewWillEndDragging:(FSSegmentTitleView *)titleView;
-
 @end
 
 @interface FSSegmentTitleView : UIView
