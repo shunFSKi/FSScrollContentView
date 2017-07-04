@@ -8,7 +8,7 @@
 
 #import "FSSegmentTitleView.h"
 
-@interface FSSegmentTitleView ()
+@interface FSSegmentTitleView ()<UIScrollViewDelegate>
 
 
 
@@ -142,6 +142,7 @@
         _scrollView.showsHorizontalScrollIndicator = NO;
         _scrollView.showsVerticalScrollIndicator = NO;
         _scrollView.scrollsToTop = NO;
+        _scrollView.delegate = self;
         [self addSubview:_scrollView];
     }
     return _scrollView;
@@ -281,6 +282,22 @@
     }
     self.selectIndex = index;
 }
+
+#pragma mark UIScrollView
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(FSSegmentTitleViewWillBeginDragging:)]) {
+        [self.delegate FSSegmentTitleViewWillBeginDragging:self];
+    }
+}
+
+- (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
+{
+    if (self.delegate&&[self.delegate respondsToSelector:@selector(FSSegmentTitleViewWillEndDragging:)]) {
+        [self.delegate FSSegmentTitleViewWillEndDragging:self];
+    }
+}
+
 
 #pragma mark Private
 /**

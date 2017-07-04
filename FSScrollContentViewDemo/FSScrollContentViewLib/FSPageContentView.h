@@ -39,6 +39,13 @@
  */
 - (void)FSContenViewDidEndDecelerating:(FSPageContentView *)contentView startIndex:(NSInteger)startIndex endIndex:(NSInteger)endIndex;
 
+/**
+ scrollViewDidEndDragging
+
+ @param contentView FSPageContentView
+ */
+- (void)FSContenViewDidEndDragging:(FSPageContentView *)contentView;
+
 @end
 
 @interface FSPageContentView : UIView

@@ -161,6 +161,15 @@ static NSString *collectionCellIdentifier = @"collectionCellIdentifier";
     }
 }
 
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    if (!decelerate) {
+        if (self.delegate && [self.delegate respondsToSelector:@selector(FSContenViewDidEndDragging:)]) {
+            [self.delegate FSContenViewDidEndDragging:self];
+        }
+    }
+}
+
 #pragma mark setter
 
 - (void)setContentViewCurrentIndex:(NSInteger)contentViewCurrentIndex
