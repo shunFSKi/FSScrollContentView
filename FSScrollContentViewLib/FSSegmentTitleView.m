@@ -200,7 +200,7 @@
 
 - (void)setSelectIndex:(NSInteger)selectIndex
 {
-    if (_selectIndex == selectIndex||_selectIndex < 0||_selectIndex > self.itemBtnArr.count - 1) {
+    if (_selectIndex == selectIndex||selectIndex < 0||selectIndex > self.itemBtnArr.count - 1) {
         return;
     }
     UIButton *lastBtn = [self.scrollView viewWithTag:_selectIndex + 666];
