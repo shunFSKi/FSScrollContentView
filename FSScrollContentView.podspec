@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "FSScrollContentView"
-  s.version      = "1.0.8"
+  s.version      = "1.0.9"
   s.summary      = "titleView pageView linkage."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC 
-                   修复若干bug和一些新特性,这是一个顶部标签与内容页联动框架
+                   修复解决父视图循环引用问题,这是一个顶部标签与内容页联动框架
                    DESC
 
   s.homepage     = "https://github.com/shunFSKi/FSScrollContentView"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/shunFSKi/FSScrollContentView.git", :tag => "1.0.8" }
+  s.source       = { :git => "https://github.com/shunFSKi/FSScrollContentView.git", :tag => "1.0.9" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
